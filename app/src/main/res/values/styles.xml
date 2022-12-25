@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2022
+  ~ David de Andrés and Juan Carlos Ruiz
+  ~ Development of apps for mobile devices
+  ~ Universitat Politècnica de València
+  -->
+
+<resources>
+    <!--Custom style for TextView-->
+    <style name="MainText" parent="@style/TextAppearance.AppCompat.Large">
+        <item name="android:textColor">?attr/colorPrimary</item>
+        <item name="fontFamily">monospace</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:gravity">center</item>
+    </style>
+</resources>

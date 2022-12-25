@@ -1,0 +1,16 @@
+<!--
+  ~ Copyright (c) 2022
+  ~ David de Andrés and Juan Carlos Ruiz
+  ~ Development of apps for mobile devices
+  ~ Universitat Politècnica de València
+  -->
+
+<resources>
+    <string name="app_name">Ex16_StylesAndThemes</string>
+    <!--Strings for texts and buttons in MainActivity-->
+    <string name="regular_text">This a regular text with no custom styling</string>
+    <string name="custom_style">This is a text with a custom styling</string>
+    <string name="regular_button">Regular button</string>
+    <string name="material2_button">Material2 Button</string>
+    <string name="material3_button">Material3 Button</string>
+</resources>
