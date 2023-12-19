@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?><!--
-  ~ Copyright (c) 2022
-  ~ David de Andrés and Juan Carlos Ruiz
-  ~ Development of apps for mobile devices
-  ~ Universitat Politècnica de València
+  ~ Copyright (c) 2022-2023 Universitat Politècnica de València
+  ~ Authors: David de Andrés and Juan Carlos Ruiz
+  ~          Fault-Tolerant Systems
+  ~          Instituto ITACA
+  ~          Universitat Politècnica de València
+  ~
+  ~ Distributed under MIT license
+  ~ (See accompanying file LICENSE.txt)
   -->
 
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -11,9 +15,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="8dp"
-    tools:context=".MainActivity"
-    tools:layout_editor_absoluteX="1dp"
-    tools:layout_editor_absoluteY="-1dp">
+    tools:context=".MainActivity">
 
     <!--Display a text with just the app theme-->
     <TextView
@@ -23,7 +25,6 @@
         android:text="@string/regular_text"
         app:layout_constraintBottom_toTopOf="@+id/tvCustomStyle"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_chainStyle="packed" />
@@ -37,7 +38,6 @@
         android:text="@string/custom_style"
         app:layout_constraintBottom_toTopOf="@+id/bRegular"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvRegular" />
 
@@ -49,33 +49,34 @@
         android:text="@string/regular_button"
         app:layout_constraintBottom_toTopOf="@+id/bMaterial"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvCustomStyle" />
 
-    <!--Button with the app theme (Material2)-->
+    <!--Button with the app theme (Material3)-->
     <Button
         android:id="@+id/bMaterial"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/material2_button"
+        android:text="@string/material3_button_default"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintBottom_toTopOf="@+id/bMaterial3"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/bRegular" />
 
-    <!--Button which replaces the app them with Material3-->
+    <!--
+      ~ Button which replaces the app theme with Material3.
+      ~ The system automatically changes Button by MaterialButton.
+      ~ That is why it has the same look and feel as the second Button.
+      -->
     <com.google.android.material.button.MaterialButton
         android:id="@+id/bMaterial3"
         style="@style/Widget.Material3.Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/material3_button"
-        android:textAppearance="?attr/textAppearanceDisplayLarge"
+        android:text="@string/material3_button_style"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.508"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/bMaterial" />
 
