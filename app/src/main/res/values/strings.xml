@@ -15,6 +15,6 @@
     <string name="regular_text">This a regular text with no custom styling</string>
     <string name="custom_style">This is a text with a custom styling</string>
     <string name="regular_button">Regular (old) button</string>
-    <string name="material3_button_default">Material3 Button (default)</string>
+    <string name="material3_button_default">Default Theme (Material3) Button</string>
     <string name="material3_button_style">Material3 Button (style)</string>
 </resources>

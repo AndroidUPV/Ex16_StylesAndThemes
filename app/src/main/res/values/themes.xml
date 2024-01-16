@@ -13,8 +13,11 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.Ex16_StylesAndThemes" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
-        <!-- The text of all components with this theme is set to 24sp-->
+        <!-- The primaryColor of all components with this theme is set to red -->
+        <item name="colorPrimary">@color/red</item>
+        <!-- Anything drawn on top of the primaryColor is white -->
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- The text of all components with this theme is set to 24sp -->
         <item name="android:textSize">24sp</item>
     </style>
 
